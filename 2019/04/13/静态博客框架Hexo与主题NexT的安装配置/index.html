@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/Han/dist/han.min.css?v=3.3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: true,
+    fastclick: true,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="静态博客框架Hexo与主题NexT的安装配置 安装前提 安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js1 Git2 Typora3   安装Node.js时请勾选Add to PATH选项。  详细步骤点击我 安装配置Hexo 1npm install -g hexo-cli 建站 安装 Hexo 完成后，请执行下列">
+<meta name="keywords" content="Hexo,Typora,安装,配置,HTML,Math,Git,CSS,NexT,博客,框架,安装配置,Javascript,Vue,WEB前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="静态博客框架Hexo与主题NexT的安装配置">
+<meta property="og:url" content="http://dmby.swpu.edu.cn/2019/04/13/静态博客框架Hexo与主题NexT的安装配置/index.html">
+<meta property="og:site_name" content="大漠白杨博客">
+<meta property="og:description" content="静态博客框架Hexo与主题NexT的安装配置 安装前提 安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js1 Git2 Typora3   安装Node.js时请勾选Add to PATH选项。  详细步骤点击我 安装配置Hexo 1npm install -g hexo-cli 建站 安装 Hexo 完成后，请执行下列">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://images2.imgbox.com/e8/af/g8uPUalf_o.png">
+<meta property="og:updated_time" content="2019-04-16T02:15:47.065Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="静态博客框架Hexo与主题NexT的安装配置">
+<meta name="twitter:description" content="静态博客框架Hexo与主题NexT的安装配置 安装前提 安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js1 Git2 Typora3   安装Node.js时请勾选Add to PATH选项。  详细步骤点击我 安装配置Hexo 1npm install -g hexo-cli 建站 安装 Hexo 完成后，请执行下列">
+<meta name="twitter:image" content="https://images2.imgbox.com/e8/af/g8uPUalf_o.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="大漠白杨博客" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="http://dmby.swpu.edu.cn/2019/04/13/静态博客框架Hexo与主题NexT的安装配置/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>静态博客框架Hexo与主题NexT的安装配置 | 大漠白杨博客</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">大漠白杨博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">学到老 活到老</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dmby.swpu.edu.cn/2019/04/13/静态博客框架Hexo与主题NexT的安装配置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大漠白杨">
+      <meta itemprop="description" content="网站前端开发与生活日常随记">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大漠白杨博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">静态博客框架Hexo与主题NexT的安装配置
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-13 19:52:03" itemprop="dateCreated datePublished" datetime="2019-04-13T19:52:03+08:00">2019-04-13</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-16 10:15:47" itemprop="dateModified" datetime="2019-04-16T10:15:47+08:00">2019-04-16</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB前端/" itemprop="url" rel="index"><span itemprop="name">WEB前端</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WEB前端/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">13k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">21 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="静态博客框架hexo与主题next的安装配置">静态博客框架Hexo与主题NexT的安装配置</h1>
+<h2 id="安装前提">安装前提</h2>
+<p>安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
+<ul>
+<li><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+<li><a href="https://typora.io/" target="_blank" rel="noopener">Typora</a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+</ul>
+<blockquote>
+<p>安装Node.js时请勾选<strong>Add to PATH</strong>选项。</p>
+</blockquote>
+<p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">详细步骤点击我</a></p>
+<h2 id="安装配置hexo">安装配置Hexo</h2>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="bullet">-g</span> <span class="string">hexo-cli</span></span><br></pre></td></tr></table></figure>
+<h3 id="建站">建站</h3>
+<p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">init</span> <span class="string">dmbyblog</span></span><br><span class="line"><span class="string">cd</span> <span class="string">dmbyblog</span></span><br><span class="line"><span class="string">npm</span> <span class="string">install</span></span><br></pre></td></tr></table></figure>
+<h3 id="站点配置">站点配置</h3>
+<blockquote>
+<p>站点：dmbyblog</p>
+<p>主题：NexT</p>
+<p>站点配置文件：<code>dmbyblog\_config.yml</code></p>
+<p>主题配置文件：<code>dmbyblog\themes\next\_config.yml</code></p>
+</blockquote>
+<p>修改站点配置文件，即<code>dmbyblog\_config.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">大漠白杨博客</span> <span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">活到老</span> <span class="string">学到老</span> <span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">网站前端开发与生活日常随记</span> <span class="comment"># 网站描述</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">WEB前端,</span> <span class="string">HTML,</span> <span class="string">CSS,</span> <span class="string">Javascript,</span> <span class="string">Vue,</span> <span class="string">框架</span>   <span class="comment"># 关键词</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">大漠白杨</span>  <span class="comment"># 你的昵称</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>  <span class="comment"># 网站使用的语言  </span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span>  <span class="comment"># 网站时区</span></span><br><span class="line"></span><br><span class="line"><span class="attr">url:</span> <span class="attr">http://dmby.swpu.edu.cn</span>  <span class="comment"># 网址</span></span><br></pre></td></tr></table></figure>
+<h3 id="常用指令">常用指令</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">功能</th>
+<th>指令</th>
+<th>精简指令</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">网站初始化</td>
+<td><code>hexo init [folder]</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">新建一篇文章</td>
+<td><code>hexo new [layout] &lt;title&gt;</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">生成静态文件</td>
+<td><code>hexo generate</code></td>
+<td><code>hexo g</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">启动服务器</td>
+<td>hexo server</td>
+<td>hexo s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">清除缓存文件</td>
+<td><code>hexo clean</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">详情点击</a></p>
+<h2 id="安装主题next">安装主题NexT</h2>
+<ol type="1">
+<li>前往 <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">NexT下载页</a> 选择最新的发布版本下载，然后将下载的压缩包解压至站点的 <code>themes</code>目录下，并将解压后的文件更改为 <code>next</code></li>
+<li>与所有Hexo主题一样，把主题源码导入themes目录后，打开<code>站点配置文件</code>， 找到 theme 字段，并将其值更改为 <code>next</code> 就完成了主题的切换。</li>
+<li>运行</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">clean</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">s</span> <span class="bullet">-g</span></span><br></pre></td></tr></table></figure>
+<h3 id="选择-scheme">选择 Scheme</h3>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># Scheme Settings</span></span><br><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Muse</span>      <span class="comment"># 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</span></span><br><span class="line"><span class="comment">#scheme: Mist     # Muse 的紧凑版本，整洁有序的单栏外观</span></span><br><span class="line"><span class="comment">#scheme: Pisces   # 双栏 Scheme，小家碧玉似的清新</span></span><br><span class="line"><span class="comment">#scheme: Gemini</span></span><br></pre></td></tr></table></figure>
+<h2 id="配置主题next">配置主题NexT</h2>
+<h3 id="设置菜单">设置菜单</h3>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">  home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span>     <span class="comment"># 首页</span></span><br><span class="line">  <span class="comment">#about: /about/ || user   # 关于</span></span><br><span class="line"><span class="attr">  tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span>    <span class="comment"># 标签</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span>  <span class="comment"># 分类</span></span><br><span class="line"><span class="attr">  archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span> <span class="comment"># 归档</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar  # 日程表</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap  # 站点地图</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat    # 公益 404</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：若你的站点运行在子目录中，请将链接前缀的 <code>/</code> 去掉，这儿菜单项目名称大小写直接与<code>language\zh-CN</code> 中的对应，不然不显示中文。</p>
+</blockquote>
+<h3 id="添加标签页面">添加「标签」页面</h3>
+<ol type="1">
+<li>新建页面</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd your-hexo-site</span><br><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>修改站点目录下 <code>source/tags</code> 的 <code>index.md</code> 文件如下：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2019-04-14 20:21:30</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<ol start="3" type="1">
+<li>修改<code>主题配置文件</code>，取消 <code>#tags: /tags</code> 这行注释。</li>
+</ol>
+<h3 id="添加分类页面">添加「分类」页面</h3>
+<ol type="1">
+<li>新建页面</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd your-hexo-site</span><br><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>修改站点目录下 <code>source/categories</code> 的 <code>index.md</code> 文如下：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2019-04-14 20:21:45</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<ol start="3" type="1">
+<li>修改<code>主题配置文件</code>，取消 <code>#categories: /categories</code> 这行注释。</li>
+</ol>
+<h3 id="添加关于页面">添加「关于」页面</h3>
+<ol type="1">
+<li>新建页面</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd your-hexo-site</span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li><p>修改<code>主题配置文件</code>，取消 <code>#about: /about</code> 这行注释。</p></li>
+<li><p>编辑站点目录下 <code>source/about</code> 的 <code>index.md</code> 文件内容，内容将显示在关于页面。</p></li>
+</ol>
+<h3 id="腾讯公益404页面">腾讯公益404页面</h3>
+<p>腾讯公益404页面，寻找丢失儿童，让大家一起关注此项公益事业！</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">cd</span> <span class="string">your-hexo-site/source</span></span><br><span class="line"><span class="string">$</span> <span class="string">mkdir</span> <span class="number">404</span></span><br></pre></td></tr></table></figure>
+<p>在<code>your-hexo-site/source/404</code>目录下创建index.html，内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8;&quot;/&gt;</span><br><span class="line">  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;</span><br><span class="line">  &lt;meta name=&quot;robots&quot; content=&quot;all&quot; /&gt;</span><br><span class="line">  &lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot;/&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.qq.com/404/search_children.js&quot;</span><br><span class="line">        charset=&quot;utf-8&quot; homePageUrl=&quot;your site url &quot;</span><br><span class="line">        homePageName=&quot;回到我的主页&quot;&gt;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="社交链接">社交链接</h3>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line"><span class="attr">  GitHub:</span> <span class="attr">https://github.com/swpitiger||</span> <span class="string">github</span></span><br><span class="line"><span class="attr">  E-Mail:</span> <span class="attr">mailto:20655132@qq.com</span> <span class="string">||</span> <span class="string">envelope</span></span><br></pre></td></tr></table></figure>
+<h3 id="头像设置">头像设置</h3>
+<p>在<code>站点配置文件</code>，新增字段 <code>avatar</code> ，值设置成头像的链接地址。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar:</span></span><br><span class="line"><span class="attr">  url:</span> <span class="string">/images/avatar.jpg</span>   <span class="comment"># 头像</span></span><br><span class="line"><span class="attr">  rounded:</span> <span class="literal">true</span>   <span class="comment"># 圆角</span></span><br><span class="line"><span class="attr">  rotated:</span> <span class="literal">true</span>   <span class="comment"># 旋转</span></span><br></pre></td></tr></table></figure>
+<p>把制作的头像，以及网站的logo全部复制到<code>dmbyblog\themes\next\source\images</code></p>
+<h3 id="文章底部标签显示的优化">文章底部标签显示的优化</h3>
+<p>修改<code>/themes/next/layout/_macro/post.swig</code>，搜索 <code>rel="tag"&gt;#</code>，将 <code>#</code> 换成 <code>&lt;i class="fa fa-tag"&gt;&lt;/i&gt;</code></p>
+<h3 id="文章图片处理">文章图片处理</h3>
+<p>新建文章时，在相同目录下创建同名文件夹（便于图片管理）</p>
+<p>修改站点配置文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span>  <span class="comment"># 启动 Asset 文件夹</span></span><br></pre></td></tr></table></figure>
+<p>安装hexo-asset-image插件，支持标准markdown图片插入。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-asset-image</span> <span class="bullet">--save</span></span><br></pre></td></tr></table></figure>
+<p>新建文章</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">filename</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>新建文章时，在创建filename文件的同时，还在/source/posts目录下创建了与filename同名的文件夹，用于存放文章中的图片。</p>
+</blockquote>
+<p><strong>Typora图片插入设置</strong></p>
+<p>文件–-&gt;偏好设置—&gt;图片插入</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">复制到指定路径</span></span><br><span class="line"><span class="string">./$&#123;filename&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="网站图标设置">网站图标设置</h3>
+<ul>
+<li>图标素材网站：<a href="https://www.iconfont.cn/" target="_blank" rel="noopener">iconfont</a>；<a href="https://www.easyicon.net/" target="_blank" rel="noopener">easyicon</a></li>
+<li>下载16x16以及32x32大小的<strong>PNG格式图标</strong>，置于<code>/themes/next/source/images/</code>下</li>
+<li>打开<strong><code>themes/next/</code>下的<code>_config.yml</code></strong>，查找<code>favicon</code></li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span><br><span class="line"><span class="attr">  small:</span> <span class="string">/images/favicon-16x16.png</span></span><br><span class="line"><span class="attr">  medium:</span> <span class="string">/images/favicon-32x32.png</span></span><br><span class="line"><span class="attr">  apple_touch_icon:</span> <span class="string">/images/apple-touch-icon.png</span></span><br><span class="line"><span class="attr">  safari_pinned_tab:</span> <span class="string">/images/logo.svg</span></span><br><span class="line">  <span class="comment">#android_manifest: /images/manifest.json</span></span><br><span class="line">  <span class="comment">#ms_browserconfig: /images/browserconfig.xml</span></span><br></pre></td></tr></table></figure>
+<h3 id="显示文章摘要">显示文章摘要</h3>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  length:</span> <span class="number">150</span></span><br></pre></td></tr></table></figure>
+<h3 id="文章摘要配图">文章摘要配图</h3>
+<ol type="1">
+<li>打开<code>themes\next\layout\_macro\post.swig</code>，在<code> {% if is_index %} </code>和<code> {% if post.description and theme.excerpt_description %}</code>之间添加如下内容</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;% if post.images %&#125;</span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"out-img-topic"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&#123;&#123;</span> <span class="attr">post.images</span> &#125;&#125; <span class="attr">class</span>=<span class="string">"img-topic"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>向<code>themes\next\source\css\_custom\custom.styl</code>中添加如下内容</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//文章摘要配图</span><br><span class="line">//图片外部的容器方框，限制图片大小</span><br><span class="line"><span class="selector-class">.out-img-topic</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">max-height</span>:<span class="number">500px</span>;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: <span class="number">24px</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line">//图片</span><br><span class="line"><span class="selector-tag">img</span><span class="selector-class">.img-topic</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block ;</span><br><span class="line">  <span class="attribute">margin-left</span>: .<span class="number">7em</span>;</span><br><span class="line">  <span class="attribute">margin-right</span>: .<span class="number">7em</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">float</span>: right;</span><br><span class="line">  <span class="attribute">clear</span>: right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="3" type="1">
+<li>将摘要图片储存于<code>themes\next\source\images</code>中，建议<strong>在此路径下</strong>单独建一个文件夹存放摘要图片，<strong>这个图片和文章中插图的存放路径不同，不是一个概念</strong>。然后在文章YAML头信息中添加images字段，将值填为<code>/images/imagename.jpg</code>。</li>
+</ol>
+<h3 id="文章图片放大">文章图片放大</h3>
+<p>配置 <strong>NexT</strong> <code>_config.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">fancybox:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>安装fancyBox 3 for NexT <a href="https://github.com/theme-next/theme-next-fancybox" target="_blank" rel="noopener">theme-next-fancybox</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd themes/next</span><br><span class="line">git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox</span><br></pre></td></tr></table></figure>
+<p>升级 fancyBox</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">cd</span> <span class="string">themes/next/source/lib/fancybox</span></span><br><span class="line"><span class="string">git</span> <span class="string">pull</span></span><br></pre></td></tr></table></figure>
+<h3 id="文章末尾添加版权声明">文章末尾添加版权声明</h3>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">creative_commons:</span></span><br><span class="line"><span class="attr">  license:</span> <span class="string">by-nc-sa</span></span><br><span class="line"><span class="attr">  sidebar:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  post:</span> <span class="literal">true</span>  <span class="comment"># 默认 false</span></span><br><span class="line"><span class="attr">  language:</span></span><br></pre></td></tr></table></figure>
+<h3 id="本地搜索">本地搜索</h3>
+<ul>
+<li>Dependencies: https://github.com/theme-next/hexo-generator-searchdb</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+<ul>
+<li>站点配置文件</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 本地搜索</span></span><br><span class="line"><span class="attr">search:</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">search.xml</span></span><br><span class="line"><span class="attr">  field:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">  format:</span> <span class="string">html</span></span><br><span class="line"><span class="attr">  limit:</span> <span class="number">10000</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>主题配置文件</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">local_search:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="文章字数与阅读时长估计">文章字数与阅读时长估计</h3>
+<p><strong>安装</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-symbols-count-time</span> <span class="bullet">--save</span></span><br></pre></td></tr></table></figure>
+<p><strong>站点配置</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  symbols:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  time:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  total_symbols:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  total_time:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p><strong>NexT主题配置</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  separated_meta:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  item_text_post:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  item_text_total:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  awl:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">  wpm:</span> <span class="number">300</span></span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/theme-next/hexo-symbols-count-time" target="_blank" rel="noopener">详细配置：https://github.com/theme-next/hexo-symbols-count-time</a></p>
+<h3 id="设置建站时间">设置建站时间</h3>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line"><span class="attr">  since:</span> <span class="number">2019</span></span><br></pre></td></tr></table></figure>
+<h3 id="mermaid-tag">Mermaid tag</h3>
+<p>渲染文章中的流程图、序列图、甘特图、类图、Git图，插件与typora显示效果一致。</p>
+<p><a href="https://github.com/webappdevelp/hexo-filter-mermaid-diagrams" target="_blank" rel="noopener"><strong>安装插件</strong></a>，网站根目录下执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-mermaid-diagrams</span><br></pre></td></tr></table></figure>
+<p><strong>配置主题</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mermaid:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Available themes: default | dark | forest | neutral</span></span><br><span class="line"><span class="attr">  theme:</span> <span class="string">forest</span></span><br><span class="line"><span class="attr">  cdn:</span> <span class="string">//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js</span></span><br></pre></td></tr></table></figure>
+<p><strong>引入相关的js文件</strong></p>
+<p>找到主题里面的页脚文件，也即 <code>themes/next/layout/_partials/footer.swig</code> ，在文件最后加上以下内容</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if (theme.mermaid.enable)  %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">'https://unpkg.com/mermaid@&lt;%= theme.mermaid.version %&gt;/dist/mermaid.min.js'</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    if (window.mermaid) &#123;</span></span><br><span class="line"><span class="undefined">      mermaid.initialize(&#123;theme: 'forest'&#125;);</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="pdf标签">PDF标签</h3>
+<p>在文章中使用PDF标签嵌入PDF文件。</p>
+<p><a href="https://github.com/theme-next/theme-next-pdf" target="_blank" rel="noopener">插件安装</a></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">cd</span> <span class="string">themes/next</span></span><br><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="attr">https://github.com/theme-next/theme-next-pdf</span> <span class="string">source/lib/pdf</span></span><br></pre></td></tr></table></figure>
+<p>配置主题</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pdf:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  height:</span> <span class="number">500</span><span class="string">px</span>   <span class="comment"># 显示窗口高度</span></span><br><span class="line"><span class="attr">  pdfobject:</span></span><br><span class="line"><span class="attr">    cdn:</span> <span class="string">//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js</span></span><br></pre></td></tr></table></figure>
+<p>使用格式</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#123;%</span> <span class="string">pdf</span> <span class="string">/path/to/your/file.pdf</span> <span class="string">%&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="页面加载进度条">页面加载进度条</h3>
+<p><a href="https://github.com/theme-next/theme-next-pace" target="_blank" rel="noopener">安装插件</a></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">cd</span> <span class="string">themes/next</span></span><br><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="attr">https://github.com/theme-next/theme-next-pace</span> <span class="string">source/lib/pace</span></span><br></pre></td></tr></table></figure>
+<p>配置主题</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pace:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="背景动画">背景动画</h3>
+<p>以下三种风格都选就太乱了，我选用的是JavaScript 3D library中的three_waves。</p>
+<h4 id="canvas-nest-风格">Canvas-nest 风格</h4>
+<ol type="1">
+<li>进入主题目录，<a href="https://github.com/theme-next/theme-next-canvas-nest" target="_blank" rel="noopener">安装插件</a></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd themes/next</span><br><span class="line">git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest</span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>修改主题配置，启用</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">canvas_nest:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+<h4 id="javascript-3d-library风格">JavaScript 3D library风格</h4>
+<ol type="1">
+<li>进入主题目录，<a href="https://github.com/theme-next/theme-next-three" target="_blank" rel="noopener">安装插件</a></li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">cd</span> <span class="string">themes/next</span></span><br><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="attr">https://github.com/theme-next/theme-next-three</span> <span class="string">source/lib/three</span></span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>修改主题配置，启用</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># three_waves</span></span><br><span class="line"><span class="attr">three_waves:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># canvas_lines</span></span><br><span class="line"><span class="attr">canvas_lines:</span> <span class="literal">false</span></span><br><span class="line"><span class="comment"># canvas_sphere</span></span><br><span class="line"><span class="attr">canvas_sphere:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<h4 id="canvas-ribbon风格">Canvas-ribbon风格</h4>
+<ol type="1">
+<li>进入主题目录，<a href="https://github.com/theme-next/theme-next-canvas-ribbon" target="_blank" rel="noopener">安装插件</a></li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">cd</span> <span class="string">themes/next</span></span><br><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="attr">https://github.com/theme-next/theme-next-canvas-ribbon</span> <span class="string">source/lib/canvas-ribbon</span></span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>修改主题配置，启用</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">canvas_ribbon:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  size:</span> <span class="number">300</span></span><br><span class="line"><span class="attr">  alpha:</span> <span class="number">0.6</span></span><br><span class="line"><span class="attr">  zIndex:</span> <span class="bullet">-1</span></span><br></pre></td></tr></table></figure>
+<h3 id="设置引用字体格式">设置引用字体格式</h3>
+<p><a href="https://github.com/theme-next/theme-next-han" target="_blank" rel="noopener">安装插件</a></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">cd</span> <span class="string">themes/next</span></span><br><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="attr">https://github.com/theme-next/theme-next-han</span> <span class="string">source/lib/Han</span></span><br></pre></td></tr></table></figure>
+<p>配置主题</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">han:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="汉字与英文之间加空格符">汉字与英文之间加空格符</h3>
+<p><a href="https://github.com/theme-next/theme-next-pangu" target="_blank" rel="noopener">安装插件</a></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">cd</span> <span class="string">themes/next</span></span><br><span class="line"><span class="string">git</span> <span class="string">clone</span> <span class="attr">https://github.com/theme-next/theme-next-pangu.git</span> <span class="string">source/lib/pangu</span></span><br></pre></td></tr></table></figure>
+<p>配置主题</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pangu:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="右上角github-banner">右上角github-banner</h3>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">github_banner:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  permalink:</span> <span class="attr">https://github.com/swpitiger</span></span><br><span class="line"><span class="attr">  title:</span> <span class="string">Follow</span> <span class="string">me</span> <span class="string">on</span> <span class="string">GitHub</span></span><br></pre></td></tr></table></figure>
+<h3 id="页脚信息">页脚信息</h3>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">powered:</span></span><br><span class="line">  <span class="comment"># Hexo link (Powered by Hexo).</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Version info of Hexo after Hexo link (vX.X.X).</span></span><br><span class="line"><span class="attr">  version:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">theme:</span></span><br><span class="line">  <span class="comment"># Theme &amp; scheme info link (Theme - NexT.scheme).</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Version info of NexT after scheme info (vX.X.X).</span></span><br><span class="line"><span class="attr">  version:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="rss订阅">RSS订阅</h3>
+<p><a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener"><strong>安装插件</strong></a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<p><strong>配置站点</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">feed:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">atom</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">atom.xml</span></span><br><span class="line"><span class="attr">  limit:</span> <span class="number">20</span></span><br><span class="line"><span class="attr">  hub:</span></span><br><span class="line"><span class="attr">  content:</span></span><br><span class="line"><span class="attr">  content_limit:</span> <span class="number">140</span></span><br><span class="line"><span class="attr">  content_limit_delim:</span> <span class="string">' '</span></span><br><span class="line"><span class="attr">  order_by:</span> <span class="bullet">-date</span></span><br></pre></td></tr></table></figure>
+<p><strong>配置主题</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">rss:</span> <span class="string">atom.xml</span></span><br></pre></td></tr></table></figure>
+<h3 id="文章打赏">文章打赏</h3>
+<p>配置主题</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Reward (Donate)</span></span><br><span class="line"><span class="attr">reward_settings:</span></span><br><span class="line">  <span class="comment"># If true, reward would be displayed in every article by default.</span></span><br><span class="line">  <span class="comment"># You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  animation:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  comment:</span> <span class="string">坚持原创技术分享，您的支持将鼓励我继续创作！</span></span><br><span class="line"></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line"><span class="attr">  wechatpay:</span> <span class="string">/images/wechatpay.jpg</span></span><br><span class="line">  <span class="comment">#alipay: /images/alipay.png</span></span><br><span class="line">  <span class="comment">#bitcoin: /images/bitcoin.png</span></span><br></pre></td></tr></table></figure>
+<h3 id="数学公式">数学公式</h3>
+<ol type="1">
+<li>安装渲染引擎</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">npm</span> <span class="string">un</span> <span class="string">hexo-renderer-marked</span> <span class="bullet">--save</span></span><br><span class="line"><span class="string">npm</span> <span class="string">i</span> <span class="string">hexo-renderer-pandoc</span> <span class="bullet">--save</span></span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>配置 <code>next/_config.yml</code></li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">math:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  per_page:</span> <span class="literal">false</span>  <span class="comment"># 每页都渲染公式</span></span><br><span class="line">  <span class="comment">#per_page: true   # 仅渲染文章Front Matter中 mathjax: true 的页面.</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  engine:</span> <span class="string">mathjax</span></span><br><span class="line"><span class="attr">  mathjax:</span></span><br><span class="line"><span class="attr">    cdn:</span> <span class="string">//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML</span></span><br><span class="line"><span class="attr">    mhchem:</span> <span class="string">//cdn.jsdelivr.net/npm/mathjax-mhchem@3</span>   <span class="comment"># 化学公式</span></span><br></pre></td></tr></table></figure>
+<ol start="3" type="1">
+<li>执行 Hexo 生成，部署，或者启动服务器：</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">clean</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">g</span> <span class="bullet">-d</span></span><br><span class="line"><span class="comment"># 或者 hexo clean &amp;&amp; hexo s</span></span><br></pre></td></tr></table></figure>
+<h3 id="hexo添加文章时自动打开编辑器">Hexo添加文章时自动打开编辑器</h3>
+<p>首先在Hexo目录下的scripts目录中创建一个JavaScript脚本文件typora.js。如果没有这个scripts目录，则新建一个。通过这个脚本，我们用其来监听hexo new这个动作，并在检测到hexo new之后，执行编辑器打开的命令。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> spawn = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</span><br><span class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">  spawn(<span class="string">'start  "C:\Program Files\Typora\Typora.exe" '</span> + data.path);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="hexo功能增强插件">Hexo功能增强插件</h3>
+<h4 id="介绍">介绍</h4>
+<p><code>hexo-enhancer</code>是一个Hexo功能增强插件。</p>
+<p>此插件支持的功能较多，并且未来会继续增加，可以理解为<code>插件包</code>。到目前为止，此插件支持的功能如下：</p>
+<ul>
+<li>自动生成<code>title</code>：根据文件名自动生成标题。</li>
+<li>自动生成<code>date</code>：根据文件名自动生成日期，具体策略类似<code>Jekyll</code>。</li>
+<li>自动生成<code>abbrlink</code>：根据标题进行<code>base32</code>和<code>crc32</code>生成短链接。</li>
+<li>自动生成<code>categories</code>：根据文件的路径解析文章所属分类。</li>
+<li>自动生成<code>tags</code>：根据配置在<code>_config.yml</code>中的可用<code>tags</code>和<code>keywords</code>自动扫描文章中出现的标签。</li>
+</ul>
+<blockquote>
+<p>只有标签生成功能有效果。</p>
+<p>有图片的文章短链接图片访问不到。</p>
+<p>分类也没变化</p>
+</blockquote>
+<h4 id="安装详细说明">安装，<a href="https://sulin.me/2019/Z726F8.html" target="_blank" rel="noopener">详细说明</a></h4>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-enhancer --save</span><br></pre></td></tr></table></figure>
+<h2 id="部署github网站">部署github网站</h2>
+<h3 id="建立github博客仓库">建立github博客仓库</h3>
+<ol type="1">
+<li>注册<a href="https://github.com/" target="_blank" rel="noopener">github</a>账户并登录</li>
+<li><code>New repository</code></li>
+<li><code>Repository Name</code> 中输入 <code>你的github用户名.github.io</code>，其他默认</li>
+<li><code>Create repository</code></li>
+</ol>
+<h3 id="关联github与本地仓库">关联github与本地仓库</h3>
+<ul>
+<li>设置git用户名和email</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的github用户名&quot;</span><br><span class="line">git config --global user.email &quot;你注册github使用的邮箱&quot;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>生成ssh密钥</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你注册github使用的邮箱&quot;</span><br></pre></td></tr></table></figure>
+<p>生成过程中全选默认，在C:.ssh目录下生成三个文件，其中<code>id_rsa.pub</code>是公钥<code>known_hosts</code>是私钥。</p>
+<ul>
+<li>github公钥设置</li>
+</ul>
+<p>登陆github，Setting—&gt;<code>SSH and GPG keys</code>—&gt;<code>New SSH key</code>—&gt;输入Title，将公钥内容粘贴到Key中<code>Add SSH key</code>即OK。</p>
+<h3 id="安装部署插件">安装部署插件</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<h3 id="配置站点">配置站点</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:swpitiger/swpitiger.github.io.git</span><br><span class="line">  brance: master</span><br></pre></td></tr></table></figure>
+<h3 id="发布网站">发布网站</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>最好的<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">git教程</a></p>
+<h3 id="常用命令">常用命令</h3>
+<ul>
+<li>在本地目录下关联远程repository</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:git_username/repository_name.git</span><br></pre></td></tr></table></figure>
+<ul>
+<li>取消本地目录下关联的远程库</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure>
+<ul>
+<li>删除本地仓库文件夹</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm -rf .git</span><br><span class="line">rm -rf 文件夹</span><br></pre></td></tr></table></figure>
+<ul>
+<li>删除远程github仓库</li>
+</ul>
+<p><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener">常用git命令清单</a></p>
+<h2 id="收录未用">收录未用</h2>
+<h3 id="站点地图">站点地图</h3>
+<p><strong>安装</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-generator-seo-friendly-sitemap</span> <span class="bullet">--save</span></span><br></pre></td></tr></table></figure>
+<p><strong>配置</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sitemap:</span></span><br><span class="line"><span class="attr">    path:</span> <span class="string">sitemap.xml</span></span><br><span class="line"><span class="attr">    tag:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">    category:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p><a href="https://www.jianshu.com/p/8c0707ce5da4" target="_blank" rel="noopener">Hexo博客收录百度和谷歌-基于Next主题</a></p>
+<h3 id="图床和上传工具">4.20 图床和上传工具</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/35270383" target="_blank" rel="noopener">盘点一下免费好用的图床</a></p>
+<p><a href="https://sm.ms/" class="uri" target="_blank" rel="noopener">https://sm.ms/</a></p>
+<h3 id="文章置顶">文章置顶</h3>
+<p><a href="http://wangwlj.com/2018/01/09/blog_pin_post/" target="_blank" rel="noopener">Hexo博客彻底解决置顶问题</a></p>
+<p>一种方法是手动对相关文件进行修改，具体可参考<a href="https://www.jianshu.com/p/42a4efcdf8d7" target="_blank" rel="noopener">这篇文章</a>。</p>
+<p>另一种方法就是，目前已经有修改后支持置顶的<a href="https://github.com/netcan/hexo-generator-index-pin-top" target="_blank" rel="noopener">仓库</a>，可以直接用以下命令安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm uninstall hexo-generator-index --save</span><br><span class="line">$ npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+<p>然后在需要置顶的文章的<code>Front-matter</code>中加上<code>top: true</code>即可。比如下面这篇文章：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo+GitHub博客搭建实战</span><br><span class="line">date: 2017-09-08 12:00:25</span><br><span class="line">categories: 博客搭建系列</span><br><span class="line">top: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>到目前为止，置顶功能已经可以实现了。所有相关博文到这边就结束了。</p>
+<p>不过置顶的文章显示在最上面之后，如果没有明确的置顶标志，是不是感觉有点怪怪的呢？</p>
+<h4 id="设置置顶标志">设置置顶标志</h4>
+<p>打开：<code>/blog/themes/next/layout/_macro</code> 目录下的<code>post.swig</code>文件，定位到<code>&lt;div class="post-meta"&gt;</code>标签下，插入如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">  &lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;font color=7D26CD&gt;置顶&lt;/font&gt;</span><br><span class="line">  &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>效果展示： <a href="https://images2.imgbox.com/e8/af/g8uPUalf_o.png" target="_blank" rel="noopener"><img src="https://images2.imgbox.com/e8/af/g8uPUalf_o.png" alt="img"></a></p>
+<h3 id="博客总访问量统计">博客总访问量统计</h3>
+<p>打开<code>themes/next/</code>下的<code>_config.yml</code>，查找<code>busuanzi</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: false</span><br><span class="line">  total_visitors_icon: user</span><br><span class="line">  total_views: false</span><br><span class="line">  total_views_icon: eye</span><br><span class="line">  post_views: true</span><br><span class="line">  post_views_icon: eye</span><br></pre></td></tr></table></figure>
+<p>目前好像用不了了</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1" role="doc-endnote"><p>Node.js是一个Javascript运行环境,是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩</a></p></li>
+<li id="fn2" role="doc-endnote"><p>提交代码必备，直接使用它的命令行工具就很OK，安装完成后鼠标右键菜单就会多出两个选项：Git GUI Here 、Git Bash Here，其中Git Bash Here就可以在当前目录下打开Git的命令行！<a href="#fnref2" class="footnote-back" role="doc-backlink">↩</a></p></li>
+<li id="fn3" role="doc-endnote"><p>简单而强大的markdown编辑工具。<a href="#fnref3" class="footnote-back" role="doc-backlink">↩</a></p></li>
+</ol>
+</section>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.jpg" alt="大漠白杨 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>大漠白杨</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://dmby.swpu.edu.cn/2019/04/13/静态博客框架Hexo与主题NexT的安装配置/" title="静态博客框架Hexo与主题NexT的安装配置">http://dmby.swpu.edu.cn/2019/04/13/静态博客框架Hexo与主题NexT的安装配置/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"> <i class="fa fa-tag"></i> Hexo</a>
+          
+            <a href="/tags/Typora/" rel="tag"> <i class="fa fa-tag"></i> Typora</a>
+          
+            <a href="/tags/安装/" rel="tag"> <i class="fa fa-tag"></i> 安装</a>
+          
+            <a href="/tags/配置/" rel="tag"> <i class="fa fa-tag"></i> 配置</a>
+          
+            <a href="/tags/HTML/" rel="tag"> <i class="fa fa-tag"></i> HTML</a>
+          
+            <a href="/tags/Math/" rel="tag"> <i class="fa fa-tag"></i> Math</a>
+          
+            <a href="/tags/Git/" rel="tag"> <i class="fa fa-tag"></i> Git</a>
+          
+            <a href="/tags/CSS/" rel="tag"> <i class="fa fa-tag"></i> CSS</a>
+          
+            <a href="/tags/NexT/" rel="tag"> <i class="fa fa-tag"></i> NexT</a>
+          
+            <a href="/tags/博客/" rel="tag"> <i class="fa fa-tag"></i> 博客</a>
+          
+            <a href="/tags/框架/" rel="tag"> <i class="fa fa-tag"></i> 框架</a>
+          
+            <a href="/tags/安装配置/" rel="tag"> <i class="fa fa-tag"></i> 安装配置</a>
+          
+            <a href="/tags/Javascript/" rel="tag"> <i class="fa fa-tag"></i> Javascript</a>
+          
+            <a href="/tags/Vue/" rel="tag"> <i class="fa fa-tag"></i> Vue</a>
+          
+            <a href="/tags/WEB前端/" rel="tag"> <i class="fa fa-tag"></i> WEB前端</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/07/Hexo标签插件（Tag Plugins）/" rel="next" title="Hexo标签插件（Tag Plugins）">
+                <i class="fa fa-chevron-left"></i> Hexo标签插件（Tag Plugins）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/15/MATH/" rel="prev" title="数学公式">
+                数学公式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="大漠白杨">
+            
+              <p class="site-author-name" itemprop="name">大漠白杨</p>
+              <div class="site-description motion-element" itemprop="description">网站前端开发与生活日常随记</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">41</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/swpitiger" title="GitHub &rarr; https://github.com/swpitiger" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:20655132@qq.com" title="E-Mail &rarr; mailto:20655132@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#静态博客框架hexo与主题next的安装配置"><span class="nav-number">1.</span> <span class="nav-text">静态博客框架Hexo与主题NexT的安装配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装前提"><span class="nav-number">1.1.</span> <span class="nav-text">安装前提</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装配置hexo"><span class="nav-number">1.2.</span> <span class="nav-text">安装配置Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#建站"><span class="nav-number">1.2.1.</span> <span class="nav-text">建站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#站点配置"><span class="nav-number">1.2.2.</span> <span class="nav-text">站点配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用指令"><span class="nav-number">1.2.3.</span> <span class="nav-text">常用指令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装主题next"><span class="nav-number">1.3.</span> <span class="nav-text">安装主题NexT</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择-scheme"><span class="nav-number">1.3.1.</span> <span class="nav-text">选择 Scheme</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置主题next"><span class="nav-number">1.4.</span> <span class="nav-text">配置主题NexT</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置菜单"><span class="nav-number">1.4.1.</span> <span class="nav-text">设置菜单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加标签页面"><span class="nav-number">1.4.2.</span> <span class="nav-text">添加「标签」页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加分类页面"><span class="nav-number">1.4.3.</span> <span class="nav-text">添加「分类」页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加关于页面"><span class="nav-number">1.4.4.</span> <span class="nav-text">添加「关于」页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#腾讯公益404页面"><span class="nav-number">1.4.5.</span> <span class="nav-text">腾讯公益404页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社交链接"><span class="nav-number">1.4.6.</span> <span class="nav-text">社交链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#头像设置"><span class="nav-number">1.4.7.</span> <span class="nav-text">头像设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章底部标签显示的优化"><span class="nav-number">1.4.8.</span> <span class="nav-text">文章底部标签显示的优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章图片处理"><span class="nav-number">1.4.9.</span> <span class="nav-text">文章图片处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站图标设置"><span class="nav-number">1.4.10.</span> <span class="nav-text">网站图标设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示文章摘要"><span class="nav-number">1.4.11.</span> <span class="nav-text">显示文章摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章摘要配图"><span class="nav-number">1.4.12.</span> <span class="nav-text">文章摘要配图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章图片放大"><span class="nav-number">1.4.13.</span> <span class="nav-text">文章图片放大</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章末尾添加版权声明"><span class="nav-number">1.4.14.</span> <span class="nav-text">文章末尾添加版权声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地搜索"><span class="nav-number">1.4.15.</span> <span class="nav-text">本地搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章字数与阅读时长估计"><span class="nav-number">1.4.16.</span> <span class="nav-text">文章字数与阅读时长估计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置建站时间"><span class="nav-number">1.4.17.</span> <span class="nav-text">设置建站时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mermaid-tag"><span class="nav-number">1.4.18.</span> <span class="nav-text">Mermaid tag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pdf标签"><span class="nav-number">1.4.19.</span> <span class="nav-text">PDF标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面加载进度条"><span class="nav-number">1.4.20.</span> <span class="nav-text">页面加载进度条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#背景动画"><span class="nav-number">1.4.21.</span> <span class="nav-text">背景动画</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#canvas-nest-风格"><span class="nav-number">1.4.21.1.</span> <span class="nav-text">Canvas-nest 风格</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#javascript-3d-library风格"><span class="nav-number">1.4.21.2.</span> <span class="nav-text">JavaScript 3D library风格</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#canvas-ribbon风格"><span class="nav-number">1.4.21.3.</span> <span class="nav-text">Canvas-ribbon风格</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置引用字体格式"><span class="nav-number">1.4.22.</span> <span class="nav-text">设置引用字体格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#汉字与英文之间加空格符"><span class="nav-number">1.4.23.</span> <span class="nav-text">汉字与英文之间加空格符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#右上角github-banner"><span class="nav-number">1.4.24.</span> <span class="nav-text">右上角github-banner</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页脚信息"><span class="nav-number">1.4.25.</span> <span class="nav-text">页脚信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rss订阅"><span class="nav-number">1.4.26.</span> <span class="nav-text">RSS订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章打赏"><span class="nav-number">1.4.27.</span> <span class="nav-text">文章打赏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数学公式"><span class="nav-number">1.4.28.</span> <span class="nav-text">数学公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo添加文章时自动打开编辑器"><span class="nav-number">1.4.29.</span> <span class="nav-text">Hexo添加文章时自动打开编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo功能增强插件"><span class="nav-number">1.4.30.</span> <span class="nav-text">Hexo功能增强插件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#介绍"><span class="nav-number">1.4.30.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装详细说明"><span class="nav-number">1.4.30.2.</span> <span class="nav-text">安装，详细说明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署github网站"><span class="nav-number">1.5.</span> <span class="nav-text">部署github网站</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#建立github博客仓库"><span class="nav-number">1.5.1.</span> <span class="nav-text">建立github博客仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联github与本地仓库"><span class="nav-number">1.5.2.</span> <span class="nav-text">关联github与本地仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装部署插件"><span class="nav-number">1.5.3.</span> <span class="nav-text">安装部署插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置站点"><span class="nav-number">1.5.4.</span> <span class="nav-text">配置站点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布网站"><span class="nav-number">1.5.5.</span> <span class="nav-text">发布网站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令"><span class="nav-number">1.5.6.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#收录未用"><span class="nav-number">1.6.</span> <span class="nav-text">收录未用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#站点地图"><span class="nav-number">1.6.1.</span> <span class="nav-text">站点地图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图床和上传工具"><span class="nav-number">1.6.2.</span> <span class="nav-text">4.20 图床和上传工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章置顶"><span class="nav-number">1.6.3.</span> <span class="nav-text">文章置顶</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#设置置顶标志"><span class="nav-number">1.6.3.1.</span> <span class="nav-text">设置置顶标志</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#博客总访问量统计"><span class="nav-number">1.6.4.</span> <span class="nav-text">博客总访问量统计</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">大漠白杨</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">89k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">2:29</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
+
+
+
+
+
+  <script src="https://unpkg.com/mermaid@<%= theme.mermaid.version %>/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+    MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+        extensions: ['[mhchem]/mhchem.js'],
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
+
+  
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
+
+  
+<script>
+if ($('body').find('pre.mermaid').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      mermaid.initialize({
+        theme: 'forest',
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 }
+      });
+    }
+  });
+}
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

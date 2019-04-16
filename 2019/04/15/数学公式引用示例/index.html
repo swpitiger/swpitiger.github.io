@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/Han/dist/han.min.css?v=3.3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: true,
+    fastclick: true,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="数学公式  NexT 内部提供数学公式渲染的引擎，这样你就不需要自己手动在模板中引入 JS 或者 CSS； 只需要将 next/_config.yml 中 math 的 enable 选项改为 true，并选择对应的渲染引擎即可： 1234math:  enable: true  ...  engine: mathjax 需要注意的是，仅仅将 math 的 enable 打开并不能让你">
+<meta name="keywords" content="示例,MaxthJax,Katex,Hexo,安装,配置,HTML,Math,CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学公式引用示例">
+<meta property="og:url" content="http://dmby.swpu.edu.cn/2019/04/15/数学公式引用示例/index.html">
+<meta property="og:site_name" content="大漠白杨博客">
+<meta property="og:description" content="数学公式  NexT 内部提供数学公式渲染的引擎，这样你就不需要自己手动在模板中引入 JS 或者 CSS； 只需要将 next/_config.yml 中 math 的 enable 选项改为 true，并选择对应的渲染引擎即可： 1234math:  enable: true  ...  engine: mathjax 需要注意的是，仅仅将 math 的 enable 打开并不能让你">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-16T02:57:24.673Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数学公式引用示例">
+<meta name="twitter:description" content="数学公式  NexT 内部提供数学公式渲染的引擎，这样你就不需要自己手动在模板中引入 JS 或者 CSS； 只需要将 next/_config.yml 中 math 的 enable 选项改为 true，并选择对应的渲染引擎即可： 1234math:  enable: true  ...  engine: mathjax 需要注意的是，仅仅将 math 的 enable 打开并不能让你">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="大漠白杨博客" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="http://dmby.swpu.edu.cn/2019/04/15/数学公式引用示例/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>数学公式引用示例 | 大漠白杨博客</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">大漠白杨博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">学到老 活到老</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dmby.swpu.edu.cn/2019/04/15/数学公式引用示例/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大漠白杨">
+      <meta itemprop="description" content="网站前端开发与生活日常随记">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大漠白杨博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">数学公式引用示例
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-15 11:00:11" itemprop="dateCreated datePublished" datetime="2019-04-15T11:00:11+08:00">2019-04-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-16 10:57:24" itemprop="dateModified" datetime="2019-04-16T10:57:24+08:00">2019-04-16</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/插件/" itemprop="url" rel="index"><span itemprop="name">插件</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">6.4k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">11 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 align="center">
+数学公式
+</h1>
+<p>NexT 内部提供数学公式渲染的引擎，这样你就不需要自己手动在模板中引入 JS 或者 CSS； 只需要将 <code>next/_config.yml</code> 中 <code>math</code> 的 <code>enable</code> 选项改为 <code>true</code>，并选择对应的渲染引擎即可：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">math:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  engine:</span> <span class="string">mathjax</span></span><br></pre></td></tr></table></figure>
+<p>需要注意的是，仅仅将 <code>math</code> 的 <code>enable</code> 打开<strong>并不能让你看到数学公式</strong>，你还需要<strong>使用对应的 Hexo 渲染器(Renderer)</strong> 才能真正在博客页面中显示出数学公式。引擎对应使用的 Hexo 渲染器会在引擎相关的部分介绍。</p>
+<h2 align="center">
+提供的渲染引擎
+</h2>
+<p>目前，NexT 提供两种数学公式渲染引擎，分别为 <a href="https://www.mathjax.org/" target="_blank" rel="noopener">MathJax</a> 和 <a href="https://khan.github.io/KaTeX/" target="_blank" rel="noopener">Katex</a>，默认为 MathJax。</p>
+<h3 id="mathjax默认">MathJax(默认)</h3>
+<p>如果你选择使用 MathJax 进行数学公式渲染，你需要使用 <a href="https://github.com/wzpan/hexo-renderer-pandoc" target="_blank" rel="noopener">hexo-renderer-pandoc</a> 或者 <a href="https://github.com/sun11/hexo-renderer-kramed" target="_blank" rel="noopener">hexo-renderer-kramed</a> 这两个渲染器的其中一个。</p>
+<p>首先，卸载原有的渲染器 <code>hexo-renderer-marked</code>，并安装这两种渲染器的<strong>其中一个</strong>：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm un hexo-renderer-marked --save</span><br><span class="line">npm i hexo-renderer-pandoc --save <span class="comment"># 或者 hexo-renderer-kramed</span></span><br></pre></td></tr></table></figure>
+<p>然后在 <code>next/_config.yml</code> 中将 <code>math</code> 的 <code>enable</code> 打开，并选择 <code>mathjax</code> 作为渲染引擎。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">math:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  engine:</span> <span class="string">mathjax</span></span><br><span class="line">  <span class="comment">#engine: katex</span></span><br></pre></td></tr></table></figure>
+<p>执行 Hexo 生成，部署，或者启动服务器：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br><span class="line"><span class="comment"># 或者 hexo clean &amp;&amp; hexo s</span></span><br></pre></td></tr></table></figure>
+<h4 id="使用-mathjax-给公式编号并引用公式">使用 MathJax 给公式编号并引用公式</h4>
+<p>在新版本的 NexT 主题中，我们加入了公式自动编号和引用功能。下面简要介绍一下如何使用这项功能。</p>
+<p>为了使用这项功能，一般来说，你必须把所使用的 LaTeX 公式放在 <code>equation</code> 环境里面，采用旧的方法（也就是说，仅仅把公式的每一边用两个 $ 符号包含起来）是无效的。如何引用公式？你只需要在书写公式的时候给公式一个 <code>\ label{}</code> 标记（tag），然后在正文中，可以使用 <code>\ref{}</code> 或者 <code>\eqref{}</code> 命令来引用对应的公式。使用 <code>\eqref{}</code> 是推荐的方式，因为如果你使用 <code>\ref{}</code>，公式在文中的引用编号将没有圆括号包围。下面介绍几种常见的公式编号例子。</p>
+<p>对于简单的公式，使用下面的方式给公式一个标记，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;equation&#125;</span><br><span class="line">e=mc^2</span><br><span class="line">\end&#123;equation&#125;\label&#123;eq1&#125;$$</span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[\begin{equation}
+e=mc^2
+\end{equation}\label{eq1}\]</span></p>
+<p>然后，在正文中，你可以轻松引用上述公式，一个简单的例子如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">著名的质能方程 $\eqref&#123;eq1&#125;$ 由爱因斯坦提出 ...</span><br></pre></td></tr></table></figure>
+<p><span class="math inline">\(\eqref{eq1}\)</span></p>
+<p>对于多行公式，在 <code>equation</code> 环境中，你可以使用 <code>aligned</code> 环境把公式分成多行，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;equation&#125;</span><br><span class="line">\begin&#123;aligned&#125;</span><br><span class="line">a &amp;= b + c \\</span><br><span class="line">  &amp;= d + e + f + g \\</span><br><span class="line">  &amp;= h + i</span><br><span class="line">\end&#123;aligned&#125;</span><br><span class="line">\end&#123;equation&#125;\label&#123;eq2&#125;$$</span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[
+\begin{equation}
+\begin{aligned}
+a &amp;= b + c \\
+  &amp;= d + e + f + g \\
+  &amp;= h + i
+\end{aligned}
+\end{equation}\label{eq2}
+\]</span></p>
+<p>要对齐多个公式，我们需要使用 <code>align</code> 环境。align 环境中的每个公式都有自己的编号：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;align&#125;</span><br><span class="line">a &amp;= b + c \label&#123;eq3&#125; \\</span><br><span class="line">x &amp;= yz \label&#123;eq4&#125;\\</span><br><span class="line">l &amp;= m - n \label&#123;eq5&#125;</span><br><span class="line">\end&#123;align&#125;$$</span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[
+\begin{align}
+a &amp;= b + c \label{eq3} \\
+x &amp;= yz \label{eq4}\\
+l &amp;= m - n \label{eq5}
+\end{align}
+\]</span></p>
+<p>在 <code>align</code> 环境中，如果你不想给某个或某几个公式编号，那么在这些公式后面使用 <a href="https://tex.stackexchange.com/questions/17528/show-equation-number-only-once-in-align-environment" target="_blank" rel="noopener"><code>\nonumber</code></a> 命令即可。例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;align&#125;</span><br><span class="line">-4 + 5x &amp;= 2+y \nonumber  \\</span><br><span class="line"> w+2 &amp;= -1+w \\</span><br><span class="line"> ab &amp;= cb</span><br><span class="line">\end&#123;align&#125;$$</span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[
+\begin{align}
+-4 + 5x &amp;= 2+y \nonumber  \\
+ w+2 &amp;= -1+w \\
+ ab &amp;= cb
+\end{align}
+\]</span></p>
+<p>有时，你可能会希望采用更加奇特的方式来标记和引用你的公式，你可以通过使用 <code>\tag{}</code> 命令来实现，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$x+1\over\sqrt&#123;1-x^2&#125; \tag&#123;i&#125;\label&#123;eq_tag&#125;$$</span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[
+x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag}
+\]</span></p>
+<p>如果你想要了解更多信息，请访问 <a href="http://docs.mathjax.org/en/latest/tex.html#automatic-equation-numbering" target="_blank" rel="noopener">MathJax 关于公式编号的官方文档</a>。同时，你也可以访问<a href="https://jdhao.github.io/2018/01/25/hexo-mathjax-equation-number/" target="_blank" rel="noopener">这篇博客</a> 来获取更多细节信息。</p>
+<h3 id="katex">Katex</h3>
+<p>Katex 渲染引擎相对于 MathJax 来说<strong>大大提高了速度</strong>，而且在关掉 JavaScript 时也能渲染数学公式。</p>
+<p>但是 Katex 所支持的东西没有 MathJax 全面，你可以从下面的相关链接中获取更多的信息。</p>
+<p>如果你选择使用 Katex 进行数学公式渲染，你需要使用 <a href="https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus" target="_blank" rel="noopener">hexo-renderer-markdown-it-plus</a> 或者 <a href="https://github.com/hexojs/hexo-renderer-markdown-it" target="_blank" rel="noopener">hexo-renderer-markdown-it</a> 这两种渲染器的其中一个。</p>
+<p>首先，卸载原有的渲染器 <code>hexo-renderer-marked</code>，并安装这两种渲染器的<strong>其中一个</strong>：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm un hexo-renderer-marked --save</span><br><span class="line">npm i hexo-renderer-markdown-it-plus --save</span><br><span class="line"><span class="comment"># 或者 hexo-renderer-markdown-it</span></span><br></pre></td></tr></table></figure>
+<p>然后在 <code>next/_config.yml</code> 中将 <code>math</code> 的 <code>enable</code> 打开，并选择 <code>katex</code> 作为渲染引擎。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">math:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment">#engine: mathjax</span></span><br><span class="line"><span class="attr">  engine:</span> <span class="string">katex</span></span><br></pre></td></tr></table></figure>
+<p>执行 Hexo 生成，部署，或者启动服务器：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br><span class="line"><span class="comment"># 或者 hexo clean &amp;&amp; hexo s</span></span><br></pre></td></tr></table></figure>
+<h4 id="如果你使用-hexo-renderer-markdown-it">如果你使用 hexo-renderer-markdown-it</h4>
+<p>如果你使用 <code>hexo-renderer-markdown-it</code>，你还需要为其加上 <code>markdown-it-katex</code> 作为插件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i markdown-it-katex --save</span><br></pre></td></tr></table></figure>
+<p>然后在 <code>hexo/_config.yml</code> 中将 <code>markdown-it-katex</code> 作为插件写入 <code>hexo-renderer-markdown-it</code> 的配置中：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">markdown:</span></span><br><span class="line"><span class="attr">  render:</span></span><br><span class="line"><span class="attr">    html:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    xhtmlOut:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">    breaks:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    linkify:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    typographer:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    quotes:</span> <span class="string">'“”‘’'</span></span><br><span class="line"><span class="attr">  plugins:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">markdown-it-katex</span></span><br></pre></td></tr></table></figure>
+<h4 id="已知的问题">已知的问题</h4>
+<ol type="1">
+<li>首先请查阅 Katex 的 <a href="https://github.com/Khan/KaTeX#common-issues" target="_blank" rel="noopener">Common Issue</a></li>
+<li>块级公式(例如 <code>$$...$$</code>)必须位于空行。<br>
+即在开头的 <code>$$</code> 前和在结尾的 <code>$$</code> 后不能有除了空白字符以外的其他字符。(<a href="https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509" target="_blank" rel="noopener">#32comment</a>)</li>
+<li>不支持 Unicode。(<a href="https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509" target="_blank" rel="noopener">#32comment</a>)</li>
+<li>行内公式(例如 <code>$...$</code>)在开头的 <code>$</code> 后面和结尾的 <code>$</code> 前面<strong>不能含有空格</strong>。(<a href="https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509" target="_blank" rel="noopener">#32comment</a>)</li>
+<li>如果你在文章的各级标题中(例如 <code>## 标题</code>)使用公式。<br>
+那么文章目录中的这个标题会出现 3 次未渲染的公式代码(<a href="https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359018694" target="_blank" rel="noopener">#32comment</a>)</li>
+<li>如果你在文章 Title 中使用公式，那么公式将不会被渲染。(<a href="https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359142879" target="_blank" rel="noopener">#32comment</a>)</li>
+</ol>
+<p>我们目前使用的 Katex 版本为 0.7.1，这里面可能有某些问题是因为 Katex 版本老旧导致的；</p>
+<p>但是，就像上面所说的，数学公式的渲染必须依靠渲染器来支持，目前的 Katex 相关的渲染器仅支持到 Katex 0.7.1；</p>
+<p>我们会持续关注相关渲染器的更新，如果有渲染器支持更高版本的 Katex，我们会及时更新我们的 Katex 版本。</p>
+<h3 id="相关链接">相关链接</h3>
+<ul>
+<li><a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php" target="_blank" rel="noopener">Katex 与 MathJax 渲染速度对比</a></li>
+<li><a href="https://khan.github.io/KaTeX/function-support.html" target="_blank" rel="noopener">Katex 支持的功能列表</a></li>
+</ul>
+<h2 align="center">
+相关配置说明
+</h2>
+<p>注意，在修改配置选项时，<strong>不要更改配置的缩进</strong>；</p>
+<p>目前，NexT 的所有配置都采用<strong>2 空格的缩进</strong>；</p>
+<p>如果配置的内容接在冒号后面，那么内容和冒号之间必须有一个空格(例如<code>enable: true</code>)</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Math Equations Render Support</span></span><br><span class="line"><span class="attr">math:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Default(true) will load mathjax/katex script on demand</span></span><br><span class="line">  <span class="comment"># That is it only render those page who has 'mathjax: true' in Front Matter.</span></span><br><span class="line">  <span class="comment"># If you set it to false, it will load mathjax/katex srcipt EVERY PAGE.</span></span><br><span class="line"><span class="attr">  per_page:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  engine:</span> <span class="string">mathjax</span></span><br><span class="line">  <span class="comment">#engine: katex</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># hexo-rendering-pandoc (or hexo-renderer-kramed) needed to full MathJax support.</span></span><br><span class="line"><span class="attr">  mathjax:</span></span><br><span class="line">    <span class="comment"># Use 2.7.1 as default, jsdelivr as default CDN, works everywhere even in China</span></span><br><span class="line"><span class="attr">    cdn:</span> <span class="string">//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML</span></span><br><span class="line">    <span class="comment"># For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).</span></span><br><span class="line">    <span class="comment">#cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin)</span></span><br><span class="line">  <span class="comment"># needed to full Katex support.</span></span><br><span class="line"><span class="attr">  katex:</span></span><br><span class="line">    <span class="comment"># Use 0.7.1 as default, jsdelivr as default CDN, works everywhere even in China</span></span><br><span class="line"><span class="attr">    cdn:</span> <span class="string">//cdn.jsdelivr.net/npm/katex@0.7.1/dist/katex.min.css</span></span><br><span class="line">    <span class="comment"># CDNJS, provided by cloudflare, maybe the best CDN, but not works in China</span></span><br><span class="line">    <span class="comment">#cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css</span></span><br></pre></td></tr></table></figure>
+<h3 id="enable">enable</h3>
+<p><code>true</code> 或者 <code>false</code>，默认为 <code>false</code>。</p>
+<p><code>true</code> 是打开数学公式渲染，<code>false</code> 则是关闭。</p>
+<h3 id="per_page">per_page</h3>
+<p><code>true</code> 或者 <code>false</code>，默认为 <code>true</code>。</p>
+<p>这个选项是控制是否在每篇文章都渲染数学公式；</p>
+<p>默认(<code>true</code>) 的行为是<strong>只对 Front Matter 中含有 <code>mathjax: true</code> 的文章进行数学公式渲染</strong>。</p>
+<p>如果 Front Matter 中不含有 <code>mathjax: true</code>，或者 <code>mathjax: false</code>，那么 NexT 将不会对这些文章进行数学公式渲染。</p>
+<p>例如：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 这篇文章会渲染数学公式 --&gt;</span><br><span class="line">---</span><br><span class="line">title: 'Will Render Math'</span><br><span class="line">mathjax: true</span><br><span class="line">---</span><br><span class="line">....</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 这篇文章不会渲染数学公式 --&gt;</span><br><span class="line">---</span><br><span class="line">title: 'Not Render Math'</span><br><span class="line">mathjax: false</span><br><span class="line">---</span><br><span class="line">....</span><br></pre></td></tr></table></figure>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 这篇文章也不会渲染数学公式 --&gt;</span><br><span class="line">---</span><br><span class="line">title: 'Not Render Math Either'</span><br><span class="line">---</span><br><span class="line">....</span><br></pre></td></tr></table></figure>
+<p>当你将它设置为 <code>false</code> 时，它就会在每个页面都加载 MathJax 或者 Katex 来进行数学公式渲染。</p>
+<h3 id="cdn">cdn</h3>
+<p>MathJax 和 Katex 都提供了 <code>cdn</code> 的配置，如果你不知道什么是 <code>cdn</code> ，<strong>请不要修改这个配置</strong>。</p>
+<p>首先，MathJax 和 Katex 都使用了 <a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsDelivr</a> 作为默认 CDN；</p>
+<p>之所以选择 jsDelivr 是因为它在全球各地都有比较不错的速度，而且具有中国官方颁布的 ICP 证书，在中国也能比较好地访问。</p>
+<p>同时，我们也提供了其他的 CDN 备选方案，包括著名的 <a href="https://cdnjs.com/" target="_blank" rel="noopener">CDNJS</a>。</p>
+<p>对于 MathJax 来说，我们目前采用的版本为 2.7.1。</p>
+<p>对于 Katex，由于上面提到的版本问题，我们目前采用的版本为 0.7.1。</p>
+<p>如果你想尝试我们提供的备选方案以外的 CDN，请注意使用对应的版本。</p>
+<p>特别的，对于中国的博客主，或者您的博客访问大部分来源于中国，由于 CDNJS 在部分中国地区被墙，请不要使用 CDNJS 作为 CDN。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.jpg" alt="大漠白杨 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>大漠白杨</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://dmby.swpu.edu.cn/2019/04/15/数学公式引用示例/" title="数学公式引用示例">http://dmby.swpu.edu.cn/2019/04/15/数学公式引用示例/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/示例/" rel="tag"> <i class="fa fa-tag"></i> 示例</a>
+          
+            <a href="/tags/MaxthJax/" rel="tag"> <i class="fa fa-tag"></i> MaxthJax</a>
+          
+            <a href="/tags/Katex/" rel="tag"> <i class="fa fa-tag"></i> Katex</a>
+          
+            <a href="/tags/Hexo/" rel="tag"> <i class="fa fa-tag"></i> Hexo</a>
+          
+            <a href="/tags/安装/" rel="tag"> <i class="fa fa-tag"></i> 安装</a>
+          
+            <a href="/tags/配置/" rel="tag"> <i class="fa fa-tag"></i> 配置</a>
+          
+            <a href="/tags/HTML/" rel="tag"> <i class="fa fa-tag"></i> HTML</a>
+          
+            <a href="/tags/Math/" rel="tag"> <i class="fa fa-tag"></i> Math</a>
+          
+            <a href="/tags/CSS/" rel="tag"> <i class="fa fa-tag"></i> CSS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/15/MATH/" rel="next" title="数学公式">
+                <i class="fa fa-chevron-left"></i> 数学公式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/15/Markdown文件中嵌入PDF文件示例/" rel="prev" title="Markdown文件中嵌入PDF文件示例">
+                Markdown文件中嵌入PDF文件示例 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="大漠白杨">
+            
+              <p class="site-author-name" itemprop="name">大漠白杨</p>
+              <div class="site-description motion-element" itemprop="description">网站前端开发与生活日常随记</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">41</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/swpitiger" title="GitHub &rarr; https://github.com/swpitiger" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:20655132@qq.com" title="E-Mail &rarr; mailto:20655132@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">
+数学公式
+</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">
+提供的渲染引擎
+</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#mathjax默认"><span class="nav-number">1.1.1.</span> <span class="nav-text">MathJax(默认)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-mathjax-给公式编号并引用公式"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">使用 MathJax 给公式编号并引用公式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#katex"><span class="nav-number">1.1.2.</span> <span class="nav-text">Katex</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#如果你使用-hexo-renderer-markdown-it"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">如果你使用 hexo-renderer-markdown-it</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#已知的问题"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">已知的问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关链接"><span class="nav-number">1.1.3.</span> <span class="nav-text">相关链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">
+相关配置说明
+</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#enable"><span class="nav-number">1.2.1.</span> <span class="nav-text">enable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#per_page"><span class="nav-number">1.2.2.</span> <span class="nav-text">per_page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cdn"><span class="nav-number">1.2.3.</span> <span class="nav-text">cdn</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">大漠白杨</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">89k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">2:29</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
+
+
+
+
+
+  <script src="https://unpkg.com/mermaid@<%= theme.mermaid.version %>/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+    MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+        extensions: ['[mhchem]/mhchem.js'],
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
+
+  
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2.1.1/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
+
+  
+<script>
+if ($('body').find('pre.mermaid').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      mermaid.initialize({
+        theme: 'forest',
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 }
+      });
+    }
+  });
+}
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

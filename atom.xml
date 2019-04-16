@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>大漠白杨博客</title>
+  
+  <subtitle>学到老 活到老</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://dmby.swpu.edu.cn/"/>
+  <updated>2019-04-16T07:34:52.652Z</updated>
+  <id>http://dmby.swpu.edu.cn/</id>
+  
+  <author>
+    <name>大漠白杨</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>_posts/italic text</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/16/italic%20text/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/16/italic text/</id>
+    <published>2019-04-16T07:33:16.510Z</published>
+    <updated>2019-04-16T07:34:52.652Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;MathJax.Ajax.config.path[&quot;mhchem&quot;] =
+  &quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.2&quot;;
+MathJax.Hub.Config({
+ 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>化学表达式示例</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/16/%E5%8C%96%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%A4%BA%E4%BE%8B/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/16/化学表达式示例/</id>
+    <published>2019-04-16T06:58:28.397Z</published>
+    <updated>2019-04-16T07:26:19.335Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;MathJax.Ajax.config.path[&quot;mhchem&quot;] =
+  &quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.2&quot;;
+MathJax.Hub.Config({
+ 
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/categories/Hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://dmby.swpu.edu.cn/tags/hexo/"/>
+    
+      <category term="示例" scheme="http://dmby.swpu.edu.cn/tags/%E7%A4%BA%E4%BE%8B/"/>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+      <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
+    
+      <category term="mathjax" scheme="http://dmby.swpu.edu.cn/tags/mathjax/"/>
+    
+      <category term="katax" scheme="http://dmby.swpu.edu.cn/tags/katax/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法图片嵌入示例</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/16/Markdown%E8%AF%AD%E6%B3%95%E5%9B%BE%E7%89%87%E5%B5%8C%E5%85%A5%E7%A4%BA%E4%BE%8B/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/16/Markdown语法图片嵌入示例/</id>
+    <published>2019-04-16T02:42:56.000Z</published>
+    <updated>2019-04-16T03:00:53.081Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;文章图片处理&quot;&gt;文章图片处理&lt;/h3&gt;
+&lt;p&gt;新建文章时，在相同目录下创建同名文件夹（便于图片管理）&lt;/p&gt;
+&lt;p&gt;修改站点配置文件&lt;/p&gt;
+&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/categories/Hexo/"/>
+    
+      <category term="插件" scheme="http://dmby.swpu.edu.cn/categories/Hexo/%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="hexo" scheme="http://dmby.swpu.edu.cn/tags/hexo/"/>
+    
+      <category term="插件" scheme="http://dmby.swpu.edu.cn/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="示例" scheme="http://dmby.swpu.edu.cn/tags/%E7%A4%BA%E4%BE%8B/"/>
+    
+      <category term="next" scheme="http://dmby.swpu.edu.cn/tags/next/"/>
+    
+      <category term="图片" scheme="http://dmby.swpu.edu.cn/tags/%E5%9B%BE%E7%89%87/"/>
+    
+      <category term="asset" scheme="http://dmby.swpu.edu.cn/tags/asset/"/>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+      <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
+    
+      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数学化学公式示例</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/16/%E6%95%B0%E5%AD%A6%E5%8C%96%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%A4%BA%E4%BE%8B/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/16/数学化学公式示例/</id>
+    <published>2019-04-16T02:26:37.166Z</published>
+    <updated>2019-04-16T02:57:37.882Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;math-and-academic-functions&quot;&gt;Math and Academic Functions&lt;/h1&gt;
+&lt;p&gt;August 14, 2018 by typora.io&lt;/p&gt;
+&lt;p&gt;Typora supports rendering
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/categories/Hexo/"/>
+    
+      <category term="插件" scheme="http://dmby.swpu.edu.cn/categories/Hexo/%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="示例" scheme="http://dmby.swpu.edu.cn/tags/%E7%A4%BA%E4%BE%8B/"/>
+    
+      <category term="MaxthJax" scheme="http://dmby.swpu.edu.cn/tags/MaxthJax/"/>
+    
+      <category term="Katex" scheme="http://dmby.swpu.edu.cn/tags/Katex/"/>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+      <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo-filter-mermaid-diagrams</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/15/%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%8F%92%E4%BB%B6%E7%A4%BA%E4%BE%8B/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/15/流程图插件示例/</id>
+    <published>2019-04-15T07:39:04.541Z</published>
+    <updated>2019-04-16T02:28:47.379Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;hexo滤波器-美人鱼图&quot;&gt;HEXO滤波器-&lt;a href=&quot;https://github.com/webappdevelp/hexo-filter-mermaid-diagrams&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/categories/Hexo/"/>
+    
+      <category term="插件" scheme="http://dmby.swpu.edu.cn/categories/Hexo/%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="示例" scheme="http://dmby.swpu.edu.cn/tags/%E7%A4%BA%E4%BE%8B/"/>
+    
+      <category term="流程图" scheme="http://dmby.swpu.edu.cn/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/"/>
+    
+      <category term="甘特图" scheme="http://dmby.swpu.edu.cn/tags/%E7%94%98%E7%89%B9%E5%9B%BE/"/>
+    
+      <category term="序列图" scheme="http://dmby.swpu.edu.cn/tags/%E5%BA%8F%E5%88%97%E5%9B%BE/"/>
+    
+      <category term="类图" scheme="http://dmby.swpu.edu.cn/tags/%E7%B1%BB%E5%9B%BE/"/>
+    
+      <category term="Git图" scheme="http://dmby.swpu.edu.cn/tags/Git%E5%9B%BE/"/>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+      <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown文件中嵌入PDF文件示例</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/15/Markdown%E6%96%87%E4%BB%B6%E4%B8%AD%E5%B5%8C%E5%85%A5PDF%E6%96%87%E4%BB%B6%E7%A4%BA%E4%BE%8B/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/15/Markdown文件中嵌入PDF文件示例/</id>
+    <published>2019-04-15T07:00:48.000Z</published>
+    <updated>2019-04-16T02:37:37.568Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;markdown文件中嵌入pdf文件示例&quot;&gt;Markdown文件中嵌入PDF文件示例&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/theme-next/theme-next-pdf&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/categories/Hexo/"/>
+    
+      <category term="插件" scheme="http://dmby.swpu.edu.cn/categories/Hexo/%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="pdf" scheme="http://dmby.swpu.edu.cn/tags/pdf/"/>
+    
+      <category term="插件" scheme="http://dmby.swpu.edu.cn/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="示例" scheme="http://dmby.swpu.edu.cn/tags/%E7%A4%BA%E4%BE%8B/"/>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数学公式引用示例</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/15/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E5%BC%95%E7%94%A8%E7%A4%BA%E4%BE%8B/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/15/数学公式引用示例/</id>
+    <published>2019-04-15T03:00:11.000Z</published>
+    <updated>2019-04-16T02:57:24.673Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 align=&quot;center&quot;&gt;
+数学公式
+&lt;/h1&gt;
+&lt;p&gt;NexT 内部提供数学公式渲染的引擎，这样你就不需要自己手动在模板中引入 JS 或者 CSS； 只需要将 &lt;code&gt;next/_config.yml&lt;/code&gt; 中 &lt;code&gt;math&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/categories/Hexo/"/>
+    
+      <category term="插件" scheme="http://dmby.swpu.edu.cn/categories/Hexo/%E6%8F%92%E4%BB%B6/"/>
+    
+    
+      <category term="示例" scheme="http://dmby.swpu.edu.cn/tags/%E7%A4%BA%E4%BE%8B/"/>
+    
+      <category term="MaxthJax" scheme="http://dmby.swpu.edu.cn/tags/MaxthJax/"/>
+    
+      <category term="Katex" scheme="http://dmby.swpu.edu.cn/tags/Katex/"/>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+      <category term="CSS" scheme="http://dmby.swpu.edu.cn/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数学公式</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/15/MATH/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/15/MATH/</id>
+    <published>2019-04-15T02:50:02.075Z</published>
+    <updated>2019-04-15T03:20:22.048Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 align=&quot;center&quot;&gt;
+数学公式
+&lt;/h1&gt;
+&lt;p&gt;NexT 内部提供数学公式渲染的引擎，这样你就不需要自己手动在模板中引入 JS 或者 CSS； 只需要将 &lt;code&gt;next/_config.yml&lt;/code&gt; 中 &lt;code&gt;math&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+      <category term="CSS" scheme="http://dmby.swpu.edu.cn/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>静态博客框架Hexo与主题NexT的安装配置</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/13/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Hexo%E4%B8%8E%E4%B8%BB%E9%A2%98NexT%E7%9A%84%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/13/静态博客框架Hexo与主题NexT的安装配置/</id>
+    <published>2019-04-13T11:52:03.000Z</published>
+    <updated>2019-04-16T02:15:47.065Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;静态博客框架hexo与主题next的安装配置&quot;&gt;静态博客框架Hexo与主题NexT的安装配置&lt;/h1&gt;
+&lt;h2 id=&quot;安装前提&quot;&gt;安装前提&lt;/h2&gt;
+&lt;p&gt;安装 Hexo
+        
+      
+    
+    </summary>
+    
+      <category term="WEB前端" scheme="http://dmby.swpu.edu.cn/categories/WEB%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/categories/WEB%E5%89%8D%E7%AB%AF/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+      <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
+    
+      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+      <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
+    
+      <category term="CSS" scheme="http://dmby.swpu.edu.cn/tags/CSS/"/>
+    
+      <category term="NexT" scheme="http://dmby.swpu.edu.cn/tags/NexT/"/>
+    
+      <category term="博客" scheme="http://dmby.swpu.edu.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="框架" scheme="http://dmby.swpu.edu.cn/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="安装配置" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="Javascript" scheme="http://dmby.swpu.edu.cn/tags/Javascript/"/>
+    
+      <category term="Vue" scheme="http://dmby.swpu.edu.cn/tags/Vue/"/>
+    
+      <category term="WEB前端" scheme="http://dmby.swpu.edu.cn/tags/WEB%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo标签插件（Tag Plugins）</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/07/Hexo%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6%EF%BC%88Tag%20Plugins%EF%BC%89/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/07/Hexo标签插件（Tag Plugins）/</id>
+    <published>2019-04-07T09:01:59.512Z</published>
+    <updated>2019-04-16T03:25:56.530Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;hexo标签插件tag-plugins&quot;&gt;Hexo标签插件（Tag Plugins）&lt;/h1&gt;
+&lt;p&gt;标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Front-matter</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/07/Front-matter%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/07/Front-matter设置/</id>
+    <published>2019-04-07T09:00:55.841Z</published>
+    <updated>2019-04-16T03:22:57.452Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;front-matter&quot;&gt;Front-matter&lt;/h1&gt;
+&lt;iframe src=&quot;https://www.youtube.com/embed/Rl48Yk4A_V8&quot; frameborder=&quot;0&quot; allowfullscreen
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/categories/Hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://dmby.swpu.edu.cn/tags/hexo/"/>
+    
+      <category term="front-matter" scheme="http://dmby.swpu.edu.cn/tags/front-matter/"/>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NexT主题v7.10 启用数学公式与化学公式操作</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/06/NexT%E4%B8%BB%E9%A2%98v7.10-%E5%90%AF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E4%B8%8E%E5%8C%96%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%93%8D%E4%BD%9C/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/06/NexT主题v7.10-启用数学公式与化学公式操作/</id>
+    <published>2019-04-06T15:07:25.909Z</published>
+    <updated>2019-04-16T03:44:08.134Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;开启-next-主题数学-公式与化学表达式&quot;&gt;开启 Next 主题数学 公式与化学表达式&lt;/h1&gt;
+&lt;h2 id=&quot;设置配置文件&quot;&gt;设置配置文件&lt;/h2&gt;
+&lt;p&gt;使用 MathJax 渲染引擎&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://dmby.swpu.edu.cn/tags/hexo/"/>
+    
+      <category term="Next" scheme="http://dmby.swpu.edu.cn/tags/Next/"/>
+    
+      <category term="math" scheme="http://dmby.swpu.edu.cn/tags/math/"/>
+    
+      <category term="公式" scheme="http://dmby.swpu.edu.cn/tags/%E5%85%AC%E5%BC%8F/"/>
+    
+      <category term="数学" scheme="http://dmby.swpu.edu.cn/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="化学" scheme="http://dmby.swpu.edu.cn/tags/%E5%8C%96%E5%AD%A6/"/>
+    
+      <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
+    
+      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数学公式测试</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/06/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/06/数学公式测试/</id>
+    <published>2019-04-06T13:56:01.777Z</published>
+    <updated>2019-04-07T03:09:28.304Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;math-and-academic-functions&quot;&gt;Math and Academic Functions&lt;/h1&gt;
+&lt;p&gt;August 14, 2018 by typora.io&lt;/p&gt;
+&lt;p&gt;Typora supports rendering
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法帮助</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/03/Markdown%E8%AF%AD%E6%B3%95%E5%B8%AE%E5%8A%A9/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/03/Markdown语法帮助/</id>
+    <published>2019-04-03T00:36:00.000Z</published>
+    <updated>2019-04-16T03:16:10.043Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;markdown---更简洁更高效&quot;&gt;markdown -
+        
+      
+    
+    </summary>
+    
+      <category term="Typora" scheme="http://dmby.swpu.edu.cn/categories/Typora/"/>
+    
+    
+      <category term="示例" scheme="http://dmby.swpu.edu.cn/tags/%E7%A4%BA%E4%BE%8B/"/>
+    
+      <category term="markdown" scheme="http://dmby.swpu.edu.cn/tags/markdown/"/>
+    
+      <category term="typora" scheme="http://dmby.swpu.edu.cn/tags/typora/"/>
+    
+      <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typora入门指南</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/02/Typora%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/02/Typora入门指南/</id>
+    <published>2019-04-01T16:00:00.000Z</published>
+    <updated>2019-04-16T03:28:31.415Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;入门指南&quot;&gt;入门指南&lt;/h1&gt;
+&lt;h2 id=&quot;标题的自动编号&quot;&gt;标题的自动编号&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;关于在哪里放置这些CSS，请按照&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Typora" scheme="http://dmby.swpu.edu.cn/categories/Typora/"/>
+    
+    
+      <category term="示例" scheme="http://dmby.swpu.edu.cn/tags/%E7%A4%BA%E4%BE%8B/"/>
+    
+      <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
+    
+      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
+      <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
+    
+      <category term="CSS" scheme="http://dmby.swpu.edu.cn/tags/CSS/"/>
+    
+      <category term="Javascript" scheme="http://dmby.swpu.edu.cn/tags/Javascript/"/>
+    
+      <category term="入门指南" scheme="http://dmby.swpu.edu.cn/tags/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+    
+      <category term="Markdown" scheme="http://dmby.swpu.edu.cn/tags/Markdown/"/>
+    
+  </entry>
+  
+</feed>
