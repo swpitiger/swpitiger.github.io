@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dmby.swpu.edu.cn/"/>
-  <updated>2019-04-16T07:34:52.652Z</updated>
+  <updated>2019-04-16T08:08:17.556Z</updated>
   <id>http://dmby.swpu.edu.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>_posts/italic text</title>
-    <link href="http://dmby.swpu.edu.cn/2019/04/16/italic%20text/"/>
-    <id>http://dmby.swpu.edu.cn/2019/04/16/italic text/</id>
-    <published>2019-04-16T07:33:16.510Z</published>
-    <updated>2019-04-16T07:34:52.652Z</updated>
+    <title>网上优秀资源笔记</title>
+    <link href="http://dmby.swpu.edu.cn/2019/04/16/%E7%BD%91%E4%B8%8A%E4%BC%98%E7%A7%80%E8%B5%84%E6%BA%90%E7%AC%94%E8%AE%B0/"/>
+    <id>http://dmby.swpu.edu.cn/2019/04/16/网上优秀资源笔记/</id>
+    <published>2019-04-16T08:08:17.307Z</published>
+    <updated>2019-04-16T08:08:17.556Z</updated>
     
     <summary type="html">
     
@@ -29,17 +29,32 @@
       
         
         
-          &lt;script&gt;MathJax.Ajax.config.path[&quot;mhchem&quot;] =
-  &quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.2&quot;;
-MathJax.Hub.Config({
- 
+          &lt;h1 id=&quot;优秀博客&quot;&gt;优秀博客&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;header&quot;&gt;
+&lt;th&gt;博客或网站名称&lt;/th&gt;
+&lt;th&gt;资源&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr
         
       
     
     </summary>
     
+      <category term="网络资源" scheme="http://dmby.swpu.edu.cn/categories/%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90/"/>
     
-      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+      <category term="链接" scheme="http://dmby.swpu.edu.cn/tags/%E9%93%BE%E6%8E%A5/"/>
+    
+      <category term="资源" scheme="http://dmby.swpu.edu.cn/tags/%E8%B5%84%E6%BA%90/"/>
+    
+      <category term="收录" scheme="http://dmby.swpu.edu.cn/tags/%E6%94%B6%E5%BD%95/"/>
+    
+      <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
     
   </entry>
   
@@ -72,15 +87,15 @@ MathJax.Hub.Config({
     
       <category term="示例" scheme="http://dmby.swpu.edu.cn/tags/%E7%A4%BA%E4%BE%8B/"/>
     
+      <category term="mathjax" scheme="http://dmby.swpu.edu.cn/tags/mathjax/"/>
+    
+      <category term="katax" scheme="http://dmby.swpu.edu.cn/tags/katax/"/>
+    
       <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
     
       <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
     
       <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
-    
-      <category term="mathjax" scheme="http://dmby.swpu.edu.cn/tags/mathjax/"/>
-    
-      <category term="katax" scheme="http://dmby.swpu.edu.cn/tags/katax/"/>
     
   </entry>
   
@@ -362,6 +377,14 @@ MathJax.Hub.Config({
     
       <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
     
+      <category term="NexT" scheme="http://dmby.swpu.edu.cn/tags/NexT/"/>
+    
+      <category term="博客" scheme="http://dmby.swpu.edu.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="框架" scheme="http://dmby.swpu.edu.cn/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="安装配置" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    
       <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
     
       <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
@@ -375,14 +398,6 @@ MathJax.Hub.Config({
       <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
     
       <category term="CSS" scheme="http://dmby.swpu.edu.cn/tags/CSS/"/>
-    
-      <category term="NexT" scheme="http://dmby.swpu.edu.cn/tags/NexT/"/>
-    
-      <category term="博客" scheme="http://dmby.swpu.edu.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="框架" scheme="http://dmby.swpu.edu.cn/tags/%E6%A1%86%E6%9E%B6/"/>
-    
-      <category term="安装配置" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
     
       <category term="Javascript" scheme="http://dmby.swpu.edu.cn/tags/Javascript/"/>
     
@@ -499,34 +514,6 @@ MathJax.Hub.Config({
   </entry>
   
   <entry>
-    <title>数学公式测试</title>
-    <link href="http://dmby.swpu.edu.cn/2019/04/06/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B5%8B%E8%AF%95/"/>
-    <id>http://dmby.swpu.edu.cn/2019/04/06/数学公式测试/</id>
-    <published>2019-04-06T13:56:01.777Z</published>
-    <updated>2019-04-07T03:09:28.304Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;math-and-academic-functions&quot;&gt;Math and Academic Functions&lt;/h1&gt;
-&lt;p&gt;August 14, 2018 by typora.io&lt;/p&gt;
-&lt;p&gt;Typora supports rendering
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
-    
-      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Markdown语法帮助</title>
     <link href="http://dmby.swpu.edu.cn/2019/04/03/Markdown%E8%AF%AD%E6%B3%95%E5%B8%AE%E5%8A%A9/"/>
     <id>http://dmby.swpu.edu.cn/2019/04/03/Markdown语法帮助/</id>
@@ -587,7 +574,11 @@ MathJax.Hub.Config({
     
       <category term="示例" scheme="http://dmby.swpu.edu.cn/tags/%E7%A4%BA%E4%BE%8B/"/>
     
+      <category term="入门指南" scheme="http://dmby.swpu.edu.cn/tags/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+    
       <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
+    
+      <category term="Markdown" scheme="http://dmby.swpu.edu.cn/tags/Markdown/"/>
     
       <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
     
@@ -600,10 +591,6 @@ MathJax.Hub.Config({
       <category term="CSS" scheme="http://dmby.swpu.edu.cn/tags/CSS/"/>
     
       <category term="Javascript" scheme="http://dmby.swpu.edu.cn/tags/Javascript/"/>
-    
-      <category term="入门指南" scheme="http://dmby.swpu.edu.cn/tags/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
-    
-      <category term="Markdown" scheme="http://dmby.swpu.edu.cn/tags/Markdown/"/>
     
   </entry>
   
