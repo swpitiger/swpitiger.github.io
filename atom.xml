@@ -300,13 +300,13 @@ MathJax.Hub.Config({
     
       <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
     
-      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
-    
-      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
-    
       <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
     
       <category term="CSS" scheme="http://dmby.swpu.edu.cn/tags/CSS/"/>
     
@@ -337,13 +337,13 @@ MathJax.Hub.Config({
     
       <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
     
-      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
-    
-      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
-    
       <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
     
       <category term="CSS" scheme="http://dmby.swpu.edu.cn/tags/CSS/"/>
     
@@ -387,13 +387,13 @@ MathJax.Hub.Config({
     
       <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
     
-      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
-    
-      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
-    
       <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
     
       <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
     
@@ -503,13 +503,13 @@ MathJax.Hub.Config({
     
       <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
     
-      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
-    
-      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
-    
       <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
+      <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
     
   </entry>
   
@@ -580,11 +580,11 @@ MathJax.Hub.Config({
     
       <category term="Markdown" scheme="http://dmby.swpu.edu.cn/tags/Markdown/"/>
     
-      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
-    
       <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
     
       <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
     
