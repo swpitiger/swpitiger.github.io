@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dmby.swpu.edu.cn/"/>
-  <updated>2019-04-16T08:20:20.915Z</updated>
+  <updated>2019-04-18T08:10:10.071Z</updated>
   <id>http://dmby.swpu.edu.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://dmby.swpu.edu.cn/2019/04/16/%E7%BD%91%E4%B8%8A%E4%BC%98%E7%A7%80%E8%B5%84%E6%BA%90%E7%AC%94%E8%AE%B0/"/>
     <id>http://dmby.swpu.edu.cn/2019/04/16/网上优秀资源笔记/</id>
     <published>2019-04-16T08:08:17.307Z</published>
-    <updated>2019-04-16T08:20:20.915Z</updated>
+    <updated>2019-04-18T08:10:10.071Z</updated>
     
     <summary type="html">
     
@@ -300,13 +300,13 @@ MathJax.Hub.Config({
     
       <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
     
-      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
-    
-      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
-    
       <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
     
       <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
     
       <category term="CSS" scheme="http://dmby.swpu.edu.cn/tags/CSS/"/>
     
@@ -337,13 +337,13 @@ MathJax.Hub.Config({
     
       <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
     
-      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
-    
-      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
-    
       <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
     
       <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
     
       <category term="CSS" scheme="http://dmby.swpu.edu.cn/tags/CSS/"/>
     
@@ -387,13 +387,13 @@ MathJax.Hub.Config({
     
       <category term="Typora" scheme="http://dmby.swpu.edu.cn/tags/Typora/"/>
     
-      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
-    
-      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
-    
       <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
     
       <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
     
       <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
     
@@ -503,13 +503,13 @@ MathJax.Hub.Config({
     
       <category term="Hexo" scheme="http://dmby.swpu.edu.cn/tags/Hexo/"/>
     
-      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
-    
-      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
-    
       <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
     
       <category term="Math" scheme="http://dmby.swpu.edu.cn/tags/Math/"/>
+    
+      <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
@@ -580,11 +580,11 @@ MathJax.Hub.Config({
     
       <category term="Markdown" scheme="http://dmby.swpu.edu.cn/tags/Markdown/"/>
     
+      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
+    
       <category term="安装" scheme="http://dmby.swpu.edu.cn/tags/%E5%AE%89%E8%A3%85/"/>
     
       <category term="配置" scheme="http://dmby.swpu.edu.cn/tags/%E9%85%8D%E7%BD%AE/"/>
-    
-      <category term="HTML" scheme="http://dmby.swpu.edu.cn/tags/HTML/"/>
     
       <category term="Git" scheme="http://dmby.swpu.edu.cn/tags/Git/"/>
     
